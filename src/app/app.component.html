@@ -9,5 +9,20 @@
   <body>
     <h1>{{ title }}</h1>
     <p>Nombre: {{ usuarioTest.nombre }}</p>
+
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/bienvenido-component">Bienvenido Component</a>
+        </li>
+        <li>
+          <a routerLink="/login-component">Login Component</a>
+        </li>
+        <li>
+          <a routerLink="/error-component">Error Component</a>
+        </li>
+      </ul>
+    </nav>
+    <router-outlet></router-outlet>
   </body>
 </html>
