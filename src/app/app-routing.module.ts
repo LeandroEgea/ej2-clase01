@@ -5,9 +5,9 @@ import { ErrorComponent } from './components/error/error.component';
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  { path: 'bienvenido-component', component: BienvenidoComponent },
-  { path: 'error-component', component: ErrorComponent },
-  { path: 'login-component', component: LoginComponent },
+  { path: '', component: BienvenidoComponent },
+  { path: 'login', component: LoginComponent },
+  { path: '**', component: ErrorComponent },
 ];
 
 @NgModule({
